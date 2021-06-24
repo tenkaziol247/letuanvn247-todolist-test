@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.FullTask{
+  margin-bottom: 24px;
+
+  &-collapse {
+    @include border-black-1;
+    border-top-width: 0;
+    height: 0;
+    opacity: 0;
+    overflow-y: hidden;
+    
+    &.active {
+      padding: 20px;
+      height: auto;
+      opacity: 1;
+      pointer-events: visible;
+    }
+  }
+}

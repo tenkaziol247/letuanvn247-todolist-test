@@ -1,0 +1,59 @@
+//responsive
+@mixin xs {
+  @media (max-width: #{$bp-sm - 1}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$bp-md - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$bp-lg - 1}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$bp-xl - 1}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$bp-xl}) {
+    @content;
+  }
+}
+
+@mixin custom-responsive($screen) {
+  @media (max-width: ($screen - 1) + "px") {
+    @content;
+  }
+}
+
+//border
+@mixin border-gray() {
+  border: 1px solid $color-gray-0;
+}
+
+@mixin border-black-0() {
+  border: 2px solid $color-black-0;
+}
+
+@mixin border-black-1() {
+  border: 1px solid $color-black-0;
+}
+
+//input
+@mixin input-style() {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid $color-black-0;
+  border-radius: 2px;
+}

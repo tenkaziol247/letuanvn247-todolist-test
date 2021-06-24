@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.Home {
+  max-width: $w-max;
+  margin: 0 auto;
+  display: flex;
+}
+
+@include lg {
+  .Home {
+    flex-direction: column;
+  }
+}

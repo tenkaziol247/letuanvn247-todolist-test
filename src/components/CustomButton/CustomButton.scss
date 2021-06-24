@@ -1,0 +1,47 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.CustomButton {
+  color: $color-white-0;
+  border: none;
+  cursor: pointer;
+  border-radius: $border-radius-0;
+  font-size: $fs-0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active, :focus {
+    opacity: 0.5;
+  }
+
+  &.primary {
+    background-color: $color-blue-0;
+  }
+
+  &.secondary {
+    background-color: $color-red-0;
+  }
+
+  &.tertiary {
+    background-color: $color-green-0;
+  }
+
+  &.fullWidth {
+    display: block;
+    width: 100%;
+  }
+
+  &.normal {
+    padding: 8px 30px;
+  }
+
+  &.large {
+    padding: 12px 48px;
+  }
+
+  &.small {
+    padding: 3px 12px;
+  }
+}

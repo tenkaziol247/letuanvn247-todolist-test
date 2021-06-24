@@ -1,0 +1,30 @@
+@import '../../assets/styles/mixin';
+@import '../../assets/styles/variables';
+
+.NewTask {
+  @include border-black-0;
+  flex: 1;
+
+  &-container{
+    padding: 24px 40px;
+    height: $h-max;
+  }
+
+  &-title {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
+
+@include sm {
+  .NewTask {
+    &-container{
+      padding: 16px 16px;
+      height: $h-max-1;
+    }
+  
+    &-title {
+      padding-bottom: 20px;
+    }
+  }
+}

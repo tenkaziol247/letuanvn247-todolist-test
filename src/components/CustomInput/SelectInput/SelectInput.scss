@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.SelectInput{
+  padding: 0 0 20px;
+
+  &-inputContainer{
+    position: relative;
+  }
+
+  &-input {
+    @include input-style;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    
+    &.hasError {
+      border-color: $color-red-0;
+    }
+  }
+
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-45%);
+    pointer-events: none;
+  }
+}

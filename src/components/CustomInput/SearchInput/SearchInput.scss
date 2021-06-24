@@ -1,0 +1,10 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.SearchInput {
+  padding-bottom: 20px;
+
+  &-input {
+    @include input-style;
+  }
+}

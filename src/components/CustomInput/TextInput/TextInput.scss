@@ -1,0 +1,14 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.TextInput{
+  padding: 0 0 20px;
+
+  &-input {
+    @include input-style;
+
+    &.hasError {
+      border-color: $color-red-0;
+    }
+  }
+}

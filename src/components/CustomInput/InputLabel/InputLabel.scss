@@ -1,0 +1,11 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin';
+
+.InputLabel {
+  padding: 0px 0px 4px;
+  font-weight: bold;
+
+  &-required{
+    color: $color-red-0;
+  }
+}

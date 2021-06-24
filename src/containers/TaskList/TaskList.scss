@@ -1,0 +1,99 @@
+@import "../../assets/styles/mixin";
+@import "../../assets/styles/variables";
+
+.TaskList {
+  @include border-black-0;
+  border-left-width: 0;
+  flex: 1;
+
+  &-container {
+    padding: 24px 40px;
+    height: $h-max;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  &-title {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+
+  &-list {
+    height: 780px;
+    overflow-y: auto;
+    padding-right: 2px;
+
+    &-nodata{
+      padding: 40px;
+      text-align: center;
+      font-size: $fs-3;
+    }
+  }
+
+  &-bulk{
+    background-color: $color-gray-0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    &-actions {
+      span {
+        padding: 0 8px;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+  }
+}
+
+@include sm {
+  .TaskList {
+  border-top-width: 0;
+  border-left-width: 2px;
+  
+    &-container {
+      padding: 16px 16px;
+    }
+  
+    &-title {
+      padding-bottom: 20px;
+    }
+  
+    &-list {
+      &-nodata{
+        padding: 30px;
+      }
+    }
+  
+    &-bulk{
+      padding: 8px;
+      
+      &-actions {
+        span {
+          padding: 0 2px;
+        }
+      }
+    }
+  }
+}
